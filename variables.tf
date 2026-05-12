@@ -1,6 +1,6 @@
 variable "how_many_secrets" {
   type    = number
-  default = 1
+  default = 7
 }
 
 variable "string_length" {
