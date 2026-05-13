@@ -14,3 +14,12 @@ variable "include_special" {
 variable "override_special" {
   type = string
 }
+
+variable "random_string_configs" {
+  type = map(object({
+    length           = number
+    include_special  = bool
+    override_special = string
+  }))
+  default = {}
+}

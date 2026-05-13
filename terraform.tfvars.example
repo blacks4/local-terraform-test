@@ -3,3 +3,16 @@ how_many_secrets = 5
 string_length    = 20
 include_special  = true
 override_special = "!@#$%^&*()-_"
+
+random_string_configs = {
+	app_secret = {
+		length           = 32
+		include_special  = true
+		override_special = "!@#$%^&*()-_"
+	}
+	db_password = {
+		length           = 24
+		include_special  = false
+		override_special = ""
+	}
+}
